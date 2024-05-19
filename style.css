@@ -17,6 +17,10 @@
   position: relative;
 }
 
+.text {
+  font-size: 2rem;
+}
+
 .speed {
   position: absolute;
   bottom: 0;
