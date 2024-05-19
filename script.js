@@ -28,6 +28,11 @@ let interval = setInterval(() => {
 speedInput.addEventListener("input", () => {
   clearInterval(interval);
   speed = speedInput.value;
+  if (speed < 1) {
+    speed = 1;
+  } else if (speed > 10) {
+    speed = 10;
+  }
   interval = setInterval(() => {
     textContainer.appendChild(textArray[index]);
     index++;
