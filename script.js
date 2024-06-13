@@ -12,8 +12,6 @@ for (let i = 0; i < text.length; i++) {
   textArray.push(span);
 }
 
-console.log(textArray);
-
 let interval = setInterval(() => {
   textContainer.appendChild(textArray[index]);
   index++;
@@ -43,5 +41,4 @@ speedInput.addEventListener("input", () => {
       }, 1000 / speed);
     }
   }, 1000 / speed);
-  console.log(speed);
 });
